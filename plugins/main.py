@@ -9,11 +9,10 @@ from helper.text import txt
 async def start_message(bot, message):
     await add_user(bot, message)    
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton("ꜱᴜᴩᴩᴏʀᴛ", url="https://t.me/BETA_SUPPORT"),
-        InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/Beta_BoTZ")
+        InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url="https://t.me/Pro_CoderZ"),
+        InlineKeyboardButton("ᴜᴩᴅᴀᴛᴇꜱ", url="https://t.me/ProCoderZBots")
         ],[            
-        InlineKeyboardButton("ʜᴇʟᴩ", callback_data="help"),
-        InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data="about") 
+        InlineKeyboardButton("Mᴏʀᴇ Bᴏᴛs", url="https://t.me/ProCoderZBots/12")
     ]])
         
     await message.reply_text(text=txt.STAT.format(message.from_user.mention), reply_markup=button, disable_web_page_preview=True)
