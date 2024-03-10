@@ -18,7 +18,7 @@ async def start_message(bot, message):
     await message.reply_text(text=txt.STAT.format(message.from_user.mention), reply_markup=button, disable_web_page_preview=True)
         
                                               
-@Client.on_message(filters.command(["id", "info"]))
+@Client.on_message(filters.command(["zhssd", "zjso"]))
 async def media_info(bot, m): 
     message = m
     ff = m.from_user
@@ -45,8 +45,8 @@ async def media_info(bot, m):
                                         
     if not md:
         buttons = [[
-            InlineKeyboardButton("✨️ Support", url="https://t.me/BETA_SUPPORT"),
-            InlineKeyboardButton("📢 Updates", url="https://t.me/Beta_BoTZ")
+            InlineKeyboardButton("✨️ Support", url="https://t.me/ProCoderZBots"),
+            InlineKeyboardButton("📢 Updates", url="https://t.me/ProCoderZBots")
         ]]       
         mkn = await m.reply("please wait....")
         if ff.photo:
