@@ -3,8 +3,8 @@ from pyrogram import Client, filters
 
 """Edit ചെയ്യുന്നവനോട്.. നിന്റെ തന്ത അല്ല ഈ code ഉണ്ടാക്കിയത് """
 
-@(filters. & filters.private)
-(client: Client, message):
+@Client.on_message(filters.photo & filters.private)
+async def photo(client: Client, message: Message):
     try:
         await client.send_message(
             chat_id=message.chat.id,
@@ -54,11 +54,3 @@ from pyrogram import Client, filters
                 await message.reply_text("Something went wrong!", quote=True)
             except Exception:
                 return
-
-
-
-
-
-
-
-
