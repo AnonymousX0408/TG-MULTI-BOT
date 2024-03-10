@@ -1,7 +1,7 @@
 
 class txt(object):
     STAT = """Hello {} 👋🏻
-I'am Song Downloader Bot Just Send Me Any Song Name To Download It's Like : `/song Your Song Name` 
+I'am Song Downloader Bot Just Send Me Any Song Name To Download It Like : `/song Your Song Name` 
 
 🥀 Made By : @ProCoderZBots"""
 
